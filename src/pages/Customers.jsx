@@ -81,6 +81,7 @@ const Customers = () => {
             <tr><td><p><strong>Waist:</strong> {selectedUser.waist}</p></td></tr>
             <tr><td><p><strong>Package:</strong> {selectedUser.packageType}</p></td></tr>
             <tr><td><p><strong>Rupees:</strong> ₹ {selectedUser.rupees}</p></td></tr>
+            <tr><td><img src={selectedUser.signature} alt={selectedUser.name} width="66" height="36" /></td></tr>
             <tr><td><Link to={`/edit/${selectedUser.id}`}><button className='button'>Edit</button></Link>
             <button className='button button1' onClick={() => setSelectedUser(null)}>Close</button></td></tr>
             </tbody>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaChartBar, FaHistory, FaPlus, FaTh, FaUserAlt } from "react-icons/fa";
+import { FaBars, FaHistory, FaPlus, FaTh, FaUserAlt } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import logo from '../data/IMG_9089-removebg-preview.png';
 
@@ -27,11 +27,7 @@ function Sidebar({children}) {
             name:"Pending",
             icon:<FaHistory/>
         },
-        {
-            path:"/analysis",
-            name:"Analysis",
-            icon:<FaChartBar/>
-        },
+       
     ];
   return (
     <div className='container'>
