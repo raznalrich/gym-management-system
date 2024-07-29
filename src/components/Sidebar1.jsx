@@ -42,7 +42,8 @@ function Sidebar({children}) {
             {
                 menuitems.map((item , index)=>(
                     <NavLink to={item.path} key={index} className="link" activeclassname='active'>
-                                       <div style={{display: isOpen ? "block" : "none"}} className="link_text">{item.name}</div>
+                        <div className="icon">{item.icon}</div>
+                        <div style={{display: isOpen ? "block" : "none"}} className="link_text">{item.name}</div>
                     </NavLink>
                 ))
             }
