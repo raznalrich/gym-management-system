@@ -40,8 +40,8 @@ function Admission() {
       case 'Thread Mill':
         setRupees(300);
         break;
-      case 'Personal Training':
-        setRupees(4000);
+      case '3 months + 3 TM':
+        setRupees(2200);
         break;
       case '3 Months':
         setRupees(1500);
@@ -228,7 +228,7 @@ function Admission() {
           <option value="Normal Package">Normal Package</option>
           <option value="Normal Package + Thread Mill">Normal Package + Thread Mill</option>
           <option value="Thread Mill">Thread Mill</option>
-          <option value="Personal Training">Personal Training</option>
+          <option value="3 months + 3 TM">3 months + 3 TM</option>
           <option value="3 Months">3 Months</option>
         </select>
         <input
@@ -243,7 +243,7 @@ function Admission() {
           <li>മെമ്പർഷിപ് കൈമാറ്റം ചെയ്യാൻ പാടുള്ളതല്ല , 6 മാസം തുടർച്ചയായി മുടങ്ങിയാൽ അഡ്മിഷൻ റദ്ദാവുന്നതാണ്</li>
           <li>എല്ലാ മാസവും 1 മുതൽ 10 -o  തിയതിക്കകം ഫീസ് അടച്ചിരിക്കേണ്ടതാണ് . അല്ലാത്തപക്ഷം ഫൈൻ ഈടാക്കുന്നതാണ് .</li>
           <li>ഫീസ് അടച്ചതിന്റെ രസീത് കൈപ്പറ്റേണ്ടതാണ് . അല്ലാത്തപക്ഷം ഫീസ് അടച്ചതായി പരിഗണിക്കുന്നതല്ല .</li>
-          <li>ഒരിക്കൽ അടച്ച അഡ്വാൻസ് ഫീസും , മസാഫീസും മടക്കിത്തരുന്നതല്ല . ക്ലബിലെ ഉപകരണങ്ങൾ ഉപയോഗത്തിനുശേഷം യഥാസ്ഥാനങ്ങളിൽ തിരികെ വെയ്‌ക്കേണ്ടതാണ് .</li>
+          <li>ഒരിക്കൽ അടച്ച അഡ്വാൻസ് ഫീസും , മാസഫീസും മടക്കിത്തരുന്നതല്ല . ക്ലബിലെ ഉപകരണങ്ങൾ ഉപയോഗത്തിനുശേഷം യഥാസ്ഥാനങ്ങളിൽ തിരികെ വെയ്‌ക്കേണ്ടതാണ് .</li>
           <li>പരിശീലനത്തിനിടയിൽ ഉണ്ടാക്കുന്ന ഏതെങ്കിലും രോഗം സ്ഥിരീകരിക്കപ്പെട്ടിട്ടുള്ളവർ ഡോക്ടറുടെ പൂർണ ആരോഗ്യ സർട്ടിഫിക്കറ്റ് ഹാജരാക്കേണ്ടതാണ് .</li>
           <li>ലഹരി കഴിച്ചുകൊണ്ട് ക്ലബിനുള്ളിൽ പ്രവേശിക്കാൻപാടുള്ളതല്ല</li><br/>
           <i><p>മേൽപറഞ്ഞ നിബന്ധനകൾ ബോധ്യപ്പെടുകയും അവയെല്ലാം സ്വീകാര്യമാണ് സത്യപ്രസ്താവന ചെയ്യുന്നു .</p></i>
