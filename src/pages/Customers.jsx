@@ -26,20 +26,20 @@ const Customers = () => {
     setUsers(users.filter(user => user.id !== userId));
   };
   const filteredUsers = users.filter(user =>
-    user.name.toLowerCase().includes(searchQuery.toLowerCase())
+    user.phoneNumber.includes(searchQuery)
   );
 
   return (
     <div className="table-container">
       <div className='customer-header'>
         <h2>Customers</h2>
-        <input className='search' type='text' placeholder='Search.........' value={searchQuery}
+        <input className='search' type='text' placeholder='Search by Ph No' value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)} />
       </div>
       <table className="user-table">
         <thead>
           <tr>
-            {/* <th style={{ width: '60px' }}>Profile</th> */}
+            <th style={{ width: '60px' }}>AD NO:</th>
             <th style={{ minWidth: '300px' }}>NAME</th>
             <th >PHONE</th>
             <th >ACTIONS</th>
@@ -48,7 +48,7 @@ const Customers = () => {
         <tbody>
         {filteredUsers.map(user => (
             <tr key={user.id}>
-              {/* <td><img src={user.profileImage} alt={user.name} width="50" style={{borderRadius:"30px"}} /></td> */}
+              <td>{user.admissionNo}</td>
               <td className="user-name"><img src={user.profileImage} alt={user.name} width="36" height="36" style={{borderRadius:"30px"}} /><strong>{user.name}</strong></td>
               <td>{user.phoneNumber}</td>
               <td>
@@ -69,6 +69,7 @@ const Customers = () => {
                 <th>
             <h1>User Details</h1></th></tr></thead>
             <tbody>
+            <tr><td><p><strong>Ad no:</strong> {selectedUser.admissionNo}</p></td></tr>
             <tr><td><p><strong>Name:</strong> {selectedUser.name}</p></td></tr>
             <tr><td> <p><strong>Joining Date:</strong> {selectedUser.joiningDate}</p></td></tr>
             <tr><td><p><strong>Age:</strong> {selectedUser.age}</p></td></tr>

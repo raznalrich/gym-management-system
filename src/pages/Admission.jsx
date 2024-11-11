@@ -7,6 +7,8 @@ import SignatureCanvas from 'react-signature-canvas';
 import { db, storage } from '../firebase';
 
 function Admission() {
+
+  const [admissionNo, setAdmissionNo] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [dob, setDob] = useState('');
@@ -75,6 +77,7 @@ function Admission() {
       const renewalDateString = renewalDate.toISOString().split('T')[0];
 
       await addDoc(collection(db, 'users'), {
+        admissionNo,
         name,
         packageType,
         dob,
@@ -95,6 +98,7 @@ function Admission() {
         renewalDate: renewalDateString,
       });
 
+      setAdmissionNo('');
       setName('');
       setEmail('');
       setDob('');
@@ -122,6 +126,14 @@ function Admission() {
         <FaUserPlus  size={40}/><h1>New Admission</h1>
         </div>
         <br/>
+        <label>Admission No :</label>
+        <input
+          type="text"
+          placeholder="Admission No"
+          value={admissionNo}
+          onChange={(e) => setAdmissionNo(e.target.value)}
+          required
+        />
         <label>Name</label>
         <input
           type="text"
